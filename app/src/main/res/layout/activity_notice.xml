@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginBottom="30dp">
+        <LinearLayout
+            android:id="@+id/exit2"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/exit3"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/exit">
+
+            </ImageView>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="알림 설정"
+            android:gravity="center_vertical"
+            android:textSize="25dp">
+
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:orientation="vertical"
+        android:background="#dddddd">
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="댓글알림"
+            android:gravity="center_vertical"
+            android:textSize="23dp"
+            android:paddingLeft="15dp"
+            android:layout_toLeftOf="@+id/switch1">
+
+        </TextView>
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_alignParentRight="true"
+            android:layout_width="50dp"
+            android:layout_height="match_parent">
+
+        </Switch>
+    </RelativeLayout>
+</LinearLayout>

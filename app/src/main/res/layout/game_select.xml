@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+    <Button
+        android:id="@+id/cowjump"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="카우점프"
+        android:gravity="center"
+        android:layout_marginBottom="30dp">
+
+    </Button>
+    <Button
+        android:id="@+id/run"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="스퀘어런"
+        android:gravity="center"
+        android:layout_marginBottom="30dp">
+
+    </Button>
+    <Button
+        android:id="@+id/pang"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="애니멀팡"
+        android:gravity="center">
+
+    </Button>
+</LinearLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="10dp">
+        <RelativeLayout
+            android:id="@+id/topbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/insertback"
+                android:layout_alignParentLeft="true"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/back">
+
+            </ImageView>
+            <TextView
+                android:layout_toRightOf="@+id/insertback"
+                android:layout_toLeftOf="@+id/insertok"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="40dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:text="커뮤니티"
+                >
+
+            </TextView>
+            <Button
+                android:id="@+id/insertok"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="65dp"
+                android:layout_height="50dp"
+                android:text="수정">
+
+            </Button>
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/ptboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="자유게시판"
+                android:textColor="#4CAF50"
+                android:textSize="20dp">
+
+            </TextView>
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+            <EditText
+                android:id="@+id/inserthead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="제목"
+                android:maxLength="80"
+                android:textSize="30dp">
+
+            </EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="15dp">
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/postinform2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/user">
+
+            </ImageView>
+            <TextView
+                android:id="@+id/insertnickname"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textSize="20dp"
+                android:text="닉네임"
+                android:gravity="center">
+
+            </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:orientation="horizontal"
+                android:background="#dddddd">
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/look"
+                android:layout_height="match_parent">
+
+            </ImageView>
+            <TextView
+                android:id="@+id/person2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="0">
+
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewwrite2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp">
+            <EditText
+                android:id="@+id/insertbody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="내용"
+                android:maxLength="300"
+                android:textSize="22dp">
+
+            </EditText>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/upimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="사진올리기">
+
+            </Button>
+        </LinearLayout>
+
+
+        </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="org.techtown.community">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera2" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".commentinsertActivity"></activity>
+        <activity
+            android:name=".recommentwriteActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".searchActivity" />
+        <activity android:name=".passwordfindActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".SplashActivity"></activity>
+        <activity
+            android:name=".postActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".writeActivity" />
+        <activity android:name=".noticeActivity" />
+        <activity
+            android:name=".informActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".loginActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".signActivity" />
+        <activity android:name=".nicknameActivity" />
+        <activity android:name=".postinformActivity" />
+        <activity android:name=".postinsertActivity" />
+        <activity android:name=".gameActivity"/>
+        <activity android:name=".gameselectActivity"/>
+        <activity android:name=".rungameActivity"
+            android:screenOrientation="landscape"
+            tools:ignore="LockedOrientationActivity"/>
+        <activity android:name=".cowjumpgameActivity"/>
+        <activity android:name=".end"/>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="org.techtown.community"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_alignParentLeft="true"
+            android:id="@+id/commentimage"
+            android:layout_marginRight="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/user">
+
+        </ImageView>
+        <TextView
+            android:layout_toRightOf="@+id/commentimage"
+            android:id="@+id/commentnickname"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="닉네임">
+
+        </TextView>
+        <ImageView
+            android:id="@+id/cmenu"
+            android:layout_alignParentRight="true"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:src="@drawable/menu2">
+
+        </ImageView>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginLeft="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/commentbody"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="내용...">
+
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/commenttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="날짜">
+
+        </TextView>
+        <TextView
+            android:id="@+id/recomment"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="답글 쓰기">
+
+        </TextView>
+    </LinearLayout>
+</LinearLayout>

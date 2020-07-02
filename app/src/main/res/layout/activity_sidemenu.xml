@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:background="#dddddd"
+    android:id="@+id/drawer_view"
+    android:layout_gravity="start"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/sideexit"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/exit"
+            android:layout_width="42dp"
+            android:layout_height="42dp">
+
+        </ImageView>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+
+        android:text="게시판 목록"
+        android:textColor="#000000"
+        android:textSize="32dp">
+
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/board"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="전체글"
+        android:textSize="25dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center">
+
+    </TextView>
+    <TextView
+        android:id="@+id/board1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="공지사항"
+        android:textSize="25dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center">
+
+    </TextView>
+    <TextView
+        android:id="@+id/board0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="자유 게시판"
+        android:textSize="25dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center">
+
+    </TextView>
+    <TextView
+        android:id="@+id/board2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="사건/사고"
+        android:textSize="25dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center">
+
+    </TextView>
+    <TextView
+        android:id="@+id/board3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="이벤트"
+        android:textSize="25dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center">
+
+    </TextView>
+    <TextView
+        android:id="@+id/board4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="중고거래"
+        android:textSize="25dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center">
+
+    </TextView>
+</LinearLayout>

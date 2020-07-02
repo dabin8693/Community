@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+        <ImageView
+            android:id="@+id/nicknameexit"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/exit">
+
+        </ImageView>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <EditText
+            android:id="@+id/nicknameinput"
+            android:layout_toLeftOf="@+id/nicknamecheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:maxLength="10"
+            android:hint="닉네임">
+
+        </EditText>
+        <Button
+            android:layout_toLeftOf="@+id/nicknamechangesuccess"
+            android:id="@+id/nicknamecheck"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="중복확인">
+
+        </Button>
+        <Button
+            android:layout_alignParentRight="true"
+            android:id="@+id/nicknamechangesuccess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="닉네임 변경">
+
+        </Button>
+    </RelativeLayout>
+
+</LinearLayout>
