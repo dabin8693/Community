@@ -9,8 +9,8 @@ import javax.mail.MessagingException;
 import javax.mail.SendFailedException;
 
 public class SendMail {
-    String user = "dabin75783239";
-    String password = "#dabin3239";
+    String user = "보안상";
+    String password = "보안상";
     String code;
 
     public void sendSecurityCode(String sendTo) {//회원가입
